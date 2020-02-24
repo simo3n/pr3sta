@@ -158,11 +158,11 @@ while ($row = $stmt_stg_db->fetch(PDO::FETCH_ASSOC)) {
         unset($resources->associations->categories);
 
         $resources->active = $is_active;
-        $resources->name->language[0] = $product_name; //nome prodotto
+        $resources->name->language[0] = $product_name; //product name
         $resources->name->language[0]['id'] = $id_lang_product_name;
-        $resources->description->language[0] = $long_description; //descrizione lunga
+        $resources->description->language[0] = $long_description; //long description
         $resources->description->language[0]['id'] = $id_lang_long_description;
-        $resources->description_short->language[0] = $short_description; //descrizione corta
+        $resources->description_short->language[0] = $short_description; //short description
         $resources->description_short->language[0]['id'] = $id_lang_short_description;
 
         //call webservice to update product
